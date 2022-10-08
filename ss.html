@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.S FITNES</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Font Icon CSS -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/2e7d1698d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- navbar bootstrap  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <a class="navbar-brand" href="#"><img src="logo.png" alt="" id="logo"> S.S Fitness</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gym">Gym</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Equpments">Equpments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#store">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar bootstrap ends  -->
+
+
+
+  <div class="container">
+
+    <div class="demo">
+      <h1>Join The Best Gym Of Chiplun Now</h1>
+      <form action="#" method="post" name="google-sheet">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Enter Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="number" name="age" placeholder="Enter Your Age" required>
+        </div>
+        <select class="form-control" id="exampleFormControlSelect1" name="gender" required>
+          <option value="not selected">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="gender">Other</option>
+        </select>
+        <div class="form-group">
+          <input type="text" name="location" placeholder="Enter Your Location" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Enter Your Email Id" required>
+        </div>
+        <div class="form-group">
+          <input type="number" name="number" placeholder="Enter Your Phone Number" required>
+        </div>
+        <div class="form-group">
+          <input class="submit" type="submit" value="submit">
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+  <!-- gym eqipments  -->
+  <section id="gym">
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="photo1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="photo2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="photo4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="photo5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="photo3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+
+
+  </section>
+   <!-- gym equpments  -->
+   <section id="Equpments">
+    <h2 style="text-align:center ; color:white; border-bottom: 1px solid white; margin-bottom: 10px;">Gym Equpments
+    </h2>
+    <div class="row flex">
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo13.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Gold Standard Whey Protein</h5>
+
+          <div class="flex"><a href="#" ></a></div>
+        </div>
+      </div>
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo20.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Isopure Zero Carb</h5>
+
+          <div class="flex"><a href="#" ></a></div>
+        </div>
+      </div>
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo15.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Gold Standard Whey Protein</h5>
+
+          <div class="flex"><a href="#" ></a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row flex">
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo21.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Gold Standard Whey Protein</h5>
+
+          <div class="flex"><a href="#" ></a></div>
+        </div>
+      </div>
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo22.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Isopure Zero Carb</h5>
+
+          <div class="flex"><a href="#" ></a></div>
+        </div>
+      </div>
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo23.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Gold Standard Whey Protein</h5>
+
+          <div class="flex"><a href="#" ></a></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+   <!-- gym equpments  -->
+  <!-- store section  -->
+  <section id="store">
+    <h2 style="text-align:center ; color:white; border-bottom: 1px solid white; margin-bottom: 10px;">Available Products
+    </h2>
+    <div class="row flex">
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Gold Standard Whey Protein</h5>
+
+          <div class="flex"><a href="#" class="btn btn-dark btn-lg btn-block">2998 ₹</a></div>
+        </div>
+      </div>
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo18.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Isopure Zero Carb</h5>
+
+          <div class="flex"><a href="#" class="btn btn-dark btn-lg btn-block">2998 ₹</a></div>
+        </div>
+      </div>
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo8.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Gold Standard Whey Protein</h5>
+
+          <div class="flex"><a href="#" class="btn btn-dark btn-lg btn-block">2998 ₹</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row flex">
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo9.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Gold Standard Whey Protein</h5>
+
+          <div class="flex"><a href="#" class="btn btn-dark btn-lg btn-block">2998 ₹</a></div>
+        </div>
+      </div>
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo10.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Isopure Zero Carb</h5>
+
+          <div class="flex"><a href="#" class="btn btn-dark btn-lg btn-block">2998 ₹</a></div>
+        </div>
+      </div>
+      <div class="card col-lg-4" id="cards" style="width: 20rem;">
+        <img src="photo12.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Gold Standard Whey Protein</h5>
+
+          <div class="flex"><a href="#" class="btn btn-dark btn-lg btn-block">2998 ₹</a></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="about">
+    <h2 style="text-align:center ; color:white; border-bottom: 1px solid white;">About us</h2>
+    <div class="container2">
+      <div class="row ">
+        <div class="col-lg-4 flex1">
+          <button type="button" class="btn btn-light btn-lg btn-block col-lg-6" style="width:90%">Call us</button>
+          <h5 style="text-align: center; color:aliceblue; margin-top: 10px;"><i
+              class="fa-sharp fa-solid fa-phone"></i></i>7020224131</h5>
+        </div>
+        <div class="col-lg-4 flex1">
+          <button type="button" class="btn btn-light btn-lg btn-block col-lg-6" style="width:90%">Address</button>
+          <h5 style="text-align: center; color:aliceblue; margin-top: 10px;"><i
+              class="fa-sharp fa-solid fa-location-dot"></i></i>Chiplun Khend dist ratnagiri</h5>
+        </div>
+        <div class="col-lg-4 flex1"><button type="button" class="btn btn-light btn-lg btn-block col-lg-6"
+            style="width:90%">Email</button>
+          <h5 id="email" style="text-align: center; color:aliceblue; margin-top: 10px;"><i
+              class="fa-sharp fa-solid fa-envelope"></i>chogalesoham80@gmail.com</h5>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    </div>
+
+    </div>
+  </section>
+  <!-- store section ends  -->
+  <!-- gym equipments ends  -->
+  <div class="flex">
+    <h5 style="text-align:center ; color:aliceblue;">Social links</h5>
+  </div>
+  <div class="footer">
+
+    <a href="https://www.instagram.com/soham_chogale/"><img src="instagram.png" class="insta" alt=""></a>
+    <a href="https://twitter.com/SahilZore5"><img src="twiter1.png" class="insta" alt=""></a>
+    <a href="https://wa.me/917020224131"><img src="whatsapp.png" class="insta" alt=""></a>
+    <a href="https://www.youtube.com/watch?v=tUykoP30Gb0"><img src="youtube.png" class="insta" alt=""></a>
+  </div>
+  <h5 style="text-align: center; color:aliceblue;">Copyright &copy; Soham Chogale</h5>
+
+  <script>
+
+    function contact() {
+      let x = document.getElementsByClassName('contact')[0];
+      x.style.display = "block";
+    }
+
+
+    function email() {
+
+      let y = document.getElementsByClassName('email')[0];
+      y.style.display = "block";
+    }
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwptiP8VMYP7LGgytEPIoOGrYAISFwozbAtlAQxi7hUcjYC69eEC6wPLLGnMApgfceulA/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

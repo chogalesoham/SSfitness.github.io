@@ -1,0 +1,228 @@
+
+body {
+    font-family: 'Baloo Bhai', cursive;
+    color: #f1eded;
+    margin: 0px;
+    padding: 0px;
+    background:rgb(0, 0, 0);
+    background-image: url(https://wallpaperaccess.com/full/1244688.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 90px;
+    background-color: #f1eded;
+    border-radius: 50%;
+}
+
+
+.submit{
+    color:rgb(0, 0, 0);
+    background-color: aliceblue; width: 40%;
+}
+.right .btn {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    background-color: #fff;
+    color: rgb(15, 0, 0);
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 95%;
+}
+.btn1{
+    background-color: white;
+}
+.btn:hover {
+    background-color: rgb(124, 121, 121);
+}
+
+.container {
+    
+    border: 2px solid white;
+    /* margin: 106px 80px; */
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+    margin-top: 10%;
+}
+.container h1{
+    color:white;
+}
+
+.form-group input {
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 5px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+form select{
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 5px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+#exampleFormControlSelect1{
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 5px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    color:rgb(124, 121, 121); 
+}
+.container h1 {
+    text-align: center;
+}
+.ss{
+    color: white;
+}
+.container button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+}
+
+.contact{
+    width: 100%;
+    
+    color:rgb(243, 240, 240);
+    padding: 10% 0;
+   display: none;
+   font-family: 'Baloo Bhai', cursive;
+   font-weight: bold;
+    
+
+}
+
+.footer{
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.insta{
+    width: 50px;
+    height: 50px;
+}
+.email{
+    color: white;
+    display: none;
+    text-align: center;
+    font-family: 'Baloo Bhai', cursive;
+}
+#gym{
+    margin: 50px 25px;
+}
+#gym img{
+ border-radius: 20px;
+ height: 650px;
+}
+#store{
+    margin: 50px 25px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cards{
+   border-radius: 10px;
+   margin: 5px 10px;
+   height: 400px;
+}
+#cards img{
+    width: 268px;
+    height: 268px;
+}
+#about{
+    margin: 50px 25px;
+}
+.container2{
+    margin: 20px 20px;
+
+}
+i{
+    padding: 5px 5px;
+}
+.flex1{
+    display: flex;
+    flex-direction: column;
+
+}
+#about {
+    border-bottom: 1px solid white;
+}
+.card img{
+    width:268px ;
+    height: 268px;
+}
+@media screen and (min-width:300px) and (max-width:400px){
+    #logo{
+        width: 50px;
+        height: 50px;
+        margin-left: 25px;
+        background-color: #f1eded;
+        border-radius: 50%;
+    }
+    .demo{
+        width: 100%;
+    }
+    .demo form input{
+        width: 100%;
+        padding: 0;
+    }
+    #exampleFormControlSelect1{
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 5px;
+        border: 2px solid rgb(255, 255, 255);
+        margin: 5px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        color:rgb(124, 121, 121); 
+    }
+    #gym{
+        margin: 50px 0;
+    }
+    #gym img{
+        
+        height:300px;
+        border-radius: 5px;
+        margin: 0;
+        padding: 0;
+       }
+       i{
+        padding: 2px 2px;
+    }
+    #email{
+       margin-right: 5px;
+       font-size: 17px;
+    }
+  }

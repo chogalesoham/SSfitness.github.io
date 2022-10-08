@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/2e7d1698d6.js" crossorigin="anonymous"></script>
+  <title>ss fitness regester page</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    form {
+
+      width: 40%
+    }
+
+    i {
+      padding: 10px;
+    }
+
+    form input {
+      margin: 5px 0;
+      text-align: center;
+      font-weight: bold;
+
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flex img {
+      background: white;
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+    }
+    .web{
+      display: none;
+    }
+    .border{
+      border: 2px solid white;
+      width: 50%;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 20px;
+    }
+    @media screen and (min-width:300px) and (max-width:400px) {
+      form {
+
+        width: 90%
+      }
+      .border{
+      border: 2px solid white;
+      width: 90%;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 20px;
+    }
+    }
+  </style>
+  <div class="border">
+  <h1>S.S Fitness</h1>
+  <!-- onsubmit="return validation()"  -->
+  <div class="flex">
+    <img src="logo.png" alt="">
+  </div>
+  <form action="#" method="post" class="my-4" onsubmit="return validation()" name="google-sheet">
+    <input type="text" class="form-control col-lg-12" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="enter your name" name="name" required>
+    <input type="number" class="form-control col-lg-12 number" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="enter your number" name="number" required>
+    <span style="color:red; text-align:center;display: none;" id="error">**please enter correct number**</span>
+    <input type="submit" class="btn btn-dark btn-block btn-lg" value="SUBMIT" >
+  </form>
+  <div class="web" >
+    <a href="ss.html"><button class="btn btn-success btn-block btn-lg"><i class="fa-sharp fa-solid fa-arrow-right"></i>Go
+      To Website</button></a>
+  </div>
+</div>
+
+  <script>
+    function validation() {
+
+      // if (document.getElementsByClassName('number')[0].value.length == 10) {
+      // } else {
+      //   document.getElementById('error').style.display = "block";
+      //   return false;
+      // }
+      // setTimeout(function(){
+      //   document.getElementsByClassName('web')[0].style.display = "block";
+      
+      // },3000)
+      // return true; 
+
+      setTimeout(function(){
+        document.getElementsByClassName('web')[0].style.display = "block";
+      
+      },100)
+    }
+
+  
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzc_EUzXscofR5yjCsQSu-294oQ3Ec30AOk706gi1o4ZjFrCW2fw6PPf2MBDvOkIRCz/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+   
+  </script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
